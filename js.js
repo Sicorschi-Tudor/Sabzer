@@ -23,4 +23,39 @@ const navSlide = () => {
 
 }
 
+
+
+
 navSlide();
+
+const message = () => {
+    const button = document.getElementById('button_contact');
+    const now = document.querySelector('.row_contact');
+    const succes = document.querySelector('.form_succes');
+   
+
+    button.addEventListener('click', () => {
+
+        setTimeout(() =>{
+            now.classList.add('now');
+            
+        
+            succes.style.display = 'block';
+
+        }, 100);
+
+        
+
+        setTimeout(() =>{
+            now.classList.remove('now');
+        
+            succes.style.display = 'none';
+            
+        }, 5000);
+   
+      
+    });
+}
+
+
+message();
