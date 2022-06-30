@@ -422,6 +422,7 @@ nav {
 
 }
 
+
 /*silizare background page Contact Us __________________________________________________________________________________________*/
 
 .intro_2 {
@@ -489,7 +490,7 @@ nav {
 
 
 .D_info {
-    padding-top: 53px;
+    padding: 53px 0 48px 0;
     justify-content: space-between;
 }
 
@@ -959,6 +960,10 @@ textarea:valid~label {
         transition: transform 0.5s ease-in;
         display: none;
     }
+    .nav-active {
+        transform: translateX(0%);
+    }
+    
 
     .menu a:hover {
         padding: 0;
@@ -1061,6 +1066,7 @@ textarea:valid~label {
 
    .intro_2 .text {
     width: 50%;
+    opacity: 1;
 }
 .intro_2 .info {
     padding-top: 25px;
@@ -1172,9 +1178,6 @@ textarea:valid~label {
     }
 }
 
-.nav-active {
-    transform: translateX(0%);
-}
 
 
 
