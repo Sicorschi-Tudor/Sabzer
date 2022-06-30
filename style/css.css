@@ -145,69 +145,6 @@ nav {
     transform: scale(1.2);
 }
 
-@media screen and (max-width:1024px) {
-    .menu {
-        width: 60%;
-    }
-
-}
-
-@media screen and (max-width:1024px) {
-    .menu {
-        width: 80%;
-    }
-
-}
-
-@media screen and (max-width:768px) {
-    body {
-        overflow-x: hidden;
-    }
-
-    .menu {
-        position: absolute;
-        right: 0px;
-        height: 50vh;
-        top: 100px;
-        background-color: #FFFFFF;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 60%;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in;
-        display: none;
-    }
-
-    .menu a:hover {
-        padding: 0;
-        background: transparent;
-    }
-
-    .menu li {
-        opacity: 0;
-    }
-
-    .burgher {
-        display: block;
-    }
-    .nav-active{
-        display: flex;
-    }
-}
-
-@media screen and (max-width:460px) {
-
-    .container,
-    .navbar {
-        margin: 0 25px;
-    }
-}
-
-.nav-active {
-    transform: translateX(0%);
-}
-
 @keyframes navLinkFade {
     from {
         opacity: 0;
@@ -219,7 +156,6 @@ nav {
         transform: translateX(0px);
     }
 }
-
 
 .toggle .line1 {
     transform: rotate(-45deg) translate(-5px, 6px);
@@ -295,63 +231,7 @@ nav {
     padding-top: 10px;
     color: #F0F0F0;
 }
-@media screen and (max-width:1040px) {
-    .row .info-1{
-    font-size: 14px;
-    line-height: 30px;
-    }
 
-}
-
-@media screen and (max-width:915px) {
-    .intro-1 .title{
-        font-size: 60px;
-
-    }
-    .intro-1 .text{
-        font-size: 14px;
-    }
-    .row .info-1{
-        font-size: 12px;
-        line-height: 25px;
-        }
-
-}
-
-
-@media screen and (max-width:775px) {
-    .intro .info{
-        width: 265px;
-        padding-top: 35px;
-        
-    }
-    .intro-1 .title ,.title{
-        font-size: 40px;
-        line-height: 45px;
-    }
-    .intro-1 .text,.info-1{
-        padding-top: 10px;
-        
-    }
-    
-    .intro{
-        height: 50vh;
-    }
-    .intro-1{
-        height: 100%;
-       
-    }
-    .intro-1 .info{
-        margin-right: 40px;
-    }
-    .intro-1 .row{
-        padding: 40px 0 40px 0;
-        display:inline-table;
-    }
-    .row .info-1{
-        line-height: 20px;
-    }
-}
 /*silizare servicii__________________________________________________________________________________________*/
 
 
@@ -406,52 +286,6 @@ nav {
     background-size: cover;
     display: inline-block;
 }
-@media screen and (max-width:1040px) {
-    .servicii{
-        height: 100%;
-    }
-    .service {
-        width: 40%;
-        height: 100%;
-        justify-content: space-between;
-        margin-top: 30px;
-    }
-    .services{
-        padding-top: 0;
-    }
-    
-
-
-}
-
-@media screen and (max-width:775px) {
-    .service .box{
-        height: 100px;
-    }
-    .service .box img{
-        width: 100px;
-       
-    }
-   
-    .text,
-    .service .text{
-        margin: 0;
-        font-size: 12px;
-        line-height: 25px;
-
-    }
-    .service .title{
-        font-size: 14px;
-    }
-    
-}
-
-
-@media screen and (max-width:425px) {
-    .service .box img{
-        transform: scale(0.7);
-    }
-}
 
 
 
@@ -481,28 +315,6 @@ nav {
     background-size: cover;
 
 }
-@media screen and (max-width:1200px) {
-.box_img{
-    width: 30%;
-    align-items: center;
-}
-}
-
-@media screen and (max-width:768px) {
-    .box_img{
-        width: 35%;
-    }
-    }
-
-    @media screen and (max-width:425px) {
-        .box_img{
-            width: 100%;
-        }
-        .box_img img{
-            transform: scale(0.7);
-        }
-        }
-
 
 /*silizare baner__________________________________________________________________________________________*/
 
@@ -551,15 +363,7 @@ nav {
 }
 
 
-@media screen and (max-width:775px) {
- .btn a, .button{
-    font-size: 16px;
-    padding: 10px 30px;
-   }
-   .btn{
-    padding: 25px 0 45px 0;
-   }
-    }
+
 
 /*silizare footer__________________________________________________________________________________________*/
 
@@ -618,62 +422,6 @@ nav {
 
 }
 
-@media screen and (max-width:1040px) {
-    .footer_info,
-    .contact_row {
-        padding: 0;
-     
-    }
-
-    .footer_right li a {
-        margin-left: 5px;
-        
-    }
-    .line1{
-        text-align: right;
-    }
-.footer_info ul li a  ,div{
-    justify-content: space-between;
-    font-size: 12px;
-}
-}
-@media screen and (max-width:650px) {
-    .footer_info{
-        display: unset;
-    flex-flow: unset;
- justify-content: none;
-
-    }
-    .line1{
-        text-align: left;
-    }
-    .line2 {
-        text-align: left;
-        margin-top: 10px;
-    }
-    .footer_right li a {
-        margin: 10px 10px 0 0;
-        
-    }
-    .line2 li{
-        padding-right: 10px;
-    }
-    .privacy li{
-        font-size: 10px;
-    }
-    .privacy li a{
-        padding-bottom: 20px;
-    }
-    
-}
-
-@media screen and (max-width:425px) {
-.footer{
-    height: 75vh;
-}
-}
-
-
 /*silizare background page Contact Us __________________________________________________________________________________________*/
 
 .intro_2 {
@@ -704,23 +452,8 @@ nav {
 
 
 }
-@media screen and (max-width:775px) {
 
-.intro_2 .text {
-    width: 50%;
-}
-.intro_2 .info {
-    padding-top: 25px;
-    width: 100%;
-}
-}
-@media screen and (max-width:425px) {
 
-    .intro_2 .text {
-        width: 35%;
-    }
-
-}
 /*silizare Description_________________________________________________________________________________________*/
 
 
@@ -792,34 +525,6 @@ nav {
     box-sizing: border-box;
 }
 
-
-@media screen and (max-width:1024px) {
-    .subtitle {
-        font-size: 30px;
-        line-height: normal;
-        padding-top: 53px;
-    
-    }
-
-
-   
-}
-
-@media screen and (max-width:768px) {
-    .d_item .text , .d_item .title{
-        font-size: 12px;
-    }
-    .subtitle{
-        font-size: 18px;
-        padding-top: 20px;
-    }
-    .D_info{
-        padding-top: 10px;
-    }
-    .general{
-        padding-top: 25px;
-    }
-}
 
 
 
@@ -996,63 +701,6 @@ textarea:valid~label {
 
 
 
-
-@media screen and (max-width:1280px) {
-
-}
-@media screen and (max-width:1024px) {
-.contact_us .subtitle{
-    font-size: 60px;
-}
-
-.contact_form .form_succes .title{
-    padding-top: 100px;
-}
-.contact_form .form_succes .text {
-    padding-bottom: 100px;
-}
-
-}
-@media screen and (max-width:775px) {
-  
-    .contact_us .subtitle{
-        font-size: 40px;
-        padding: 40px 0;
-    }
-  
-    .container .row{
-        justify-content: left;
-        display: unset;
-    }
-    
-    .container .form , .container .text {
-        width: 100%;
-        padding-right: 100px;
-    }
-    .now{
-        display: none!important;
-    }
-      
-    
-    }
-    @media screen and (max-width:545px) {
-        .container .form , .container .text {
-            padding:0;
-        }
-    }
-
-    @media screen and (max-width:425px) {
-        .contact_us .subtitle{
-            font-size: 30px;
-            padding: 20px 0;
-        }
-        .form_2 form{
-            width: 90%;
-        }
-        
-       
-        }
-
 /*silizare _Contacts_________________________________________________________________________________________*/
 
 
@@ -1089,18 +737,6 @@ textarea:valid~label {
     max-width: 535px;
 }
 
-@media screen and (max-width:1024px) {
-    .contacts .row{
-        display: unset;
-    }
-    .contact_info {
-        font-size: 14px;
-    }
-    .contact_title img {
-        margin-bottom: 30px;
-        width: 50%;
-    }
-}
 
 /*silizare _Work background_________________________________________________________________________________________*/
 
@@ -1187,44 +823,396 @@ textarea:valid~label {
     padding: 0;
 }
 
-@media screen and (max-width:1100px) {
-    .refer_friend{
-        height: 100%;
-        
-    }
-    .refer_friend .row{
-        padding: 0;
-    }
-    .btn .refer{
-margin: 0;
-    }
-    .refer_title{
-        font-size: 35px;
-        line-height: 45px
-    }
-}
-
-
 
 
 /*responsive----------------------------------------------------*/
 
-@media screen and (max-width:1040px) {
 
-    .container{
-        padding:60px 0 60px 0;
+@media screen and (max-width:1200px) {
+    .box_img{
+        width: 30%;
+        align-items: center;
     }
-}
-
-@media screen and (max-width:915px) {
-    .container{
-        padding:40px 0 40px 0;
     }
-}
 
-    @media screen and (max-width:775px) {
-        .container{
-            padding:30px 0 30px 0;
+    @media screen and (max-width:1100px) {
+        .refer_friend{
+            height: 100%;
+            
+        }
+        .refer_friend .row{
+            padding: 0;
+        }
+        .btn .refer{
+    margin: 0;
+        }
+        .refer_title{
+            font-size: 35px;
+            line-height: 45px
         }
     }
     
+
+@media screen and (max-width:1040px) {
+    .row .info-1{
+    font-size: 14px;
+    line-height: 30px;
+    }
+
+    .servicii{
+        height: 100%;
+    }
+    .service {
+        width: 40%;
+        height: 100%;
+        justify-content: space-between;
+        margin-top: 30px;
+    }
+    .services{
+        padding-top: 0;
+    }
+    .container{
+        padding:60px 0 60px 0;
+    }
+    
+
+}
+
+@media screen and (max-width:1024px) {
+    .menu {
+        width: 80%;
+    }
+
+    .subtitle {
+        font-size: 30px;
+        line-height: normal;
+        padding-top: 53px;
+    
+    }
+
+
+    .contact_us .subtitle{
+        font-size: 60px;
+    }
+    
+    .contact_form .form_succes .title{
+        padding-top: 100px;
+    }
+    .contact_form .form_succes .text {
+        padding-bottom: 100px;
+    }
+     .contacts .row{
+        display: unset;
+    }
+    .contact_info {
+        font-size: 14px;
+    }
+    .contact_title img {
+        margin-bottom: 30px;
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width:915px) {
+    .menu {
+        width: 60%;
+    }
+
+    .intro-1 .title{
+        font-size: 60px;
+
+    }
+    .intro-1 .text{
+        font-size: 14px;
+    }
+    .row .info-1{
+        font-size: 12px;
+        line-height: 25px;
+        }
+
+            .container{
+                padding:40px 0 40px 0;
+            }
+        
+
+
+}
+
+
+@media screen and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
+    .menu {
+        position: absolute;
+        right: 0px;
+        height: 50vh;
+        top: 100px;
+        background-color: #FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 60%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+        display: none;
+    }
+
+    .menu a:hover {
+        padding: 0;
+        background: transparent;
+    }
+
+    .menu li {
+        opacity: 0;
+    }
+
+    .burgher {
+        display: block;
+    }
+    .nav-active{
+        display: flex;
+    }
+
+
+    .intro .info{
+        width: 265px;
+        padding-top: 35px;
+        
+    }
+    .intro-1 .title ,.title{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .intro-1 .text,.info-1{
+        padding-top: 10px;
+        
+    }
+    
+    .intro{
+        height: 50vh;
+    }
+    .intro-1{
+        height: 100%;
+       
+    }
+    .intro-1 .info{
+        margin-right: 40px;
+    }
+    .intro-1 .row{
+        padding: 40px 0 40px 0;
+        display:inline-table;
+    }
+    .row .info-1{
+        line-height: 20px;
+    }
+
+
+
+    .service .box{
+        height: 100px;
+    }
+    .service .box img{
+        width: 100px;
+       
+    }
+   
+    .text,
+    .service .text{
+        margin: 0;
+        font-size: 12px;
+        line-height: 25px;
+
+    }
+    .service .title{
+        font-size: 14px;
+    }
+
+    .box_img{
+        width: 35%;
+    }
+    .btn a, .button{
+        font-size: 16px;
+        padding: 10px 30px;
+       }
+       .btn{
+        padding: 25px 0 45px 0;
+       }
+
+       .footer_info,
+       .contact_row {
+           padding: 0;
+        
+       }
+   
+       .footer_right li a {
+           margin-left: 5px;
+           
+       }
+       .line1{
+           text-align: right;
+       }
+   .footer_info ul li a  ,div{
+       justify-content: space-between;
+       font-size: 12px;
+   }
+
+   .intro_2 .text {
+    width: 50%;
+}
+.intro_2 .info {
+    padding-top: 25px;
+    width: 100%;
+}
+
+.d_item .text , .d_item .title{
+    font-size: 12px;
+}
+.subtitle{
+    font-size: 18px;
+    padding-top: 20px;
+}
+.D_info{
+    padding-top: 10px;
+}
+.general{
+    padding-top: 25px;
+}
+.contact_us .subtitle{
+    font-size: 40px;
+    padding: 40px 0;
+}
+
+.container .row{
+    justify-content: left;
+    display: unset;
+}
+
+.container .form , .container .text {
+    width: 100%;
+    padding-right: 100px;
+}
+.now{
+    display: none!important;
+}
+  
+.container{
+    padding:30px 0 30px 0;
+}
+    
+}
+
+
+@media screen and (max-width:650px) {
+    .footer_info{
+        display: unset;
+    flex-flow: unset;
+ justify-content: none;
+
+    }
+    .line1{
+        text-align: left;
+    }
+    .line2 {
+        text-align: left;
+        margin-top: 10px;
+    }
+    .footer_right li a {
+        margin: 10px 10px 0 0;
+        
+    }
+    .line2 li{
+        padding-right: 10px;
+    }
+    .privacy li{
+        font-size: 10px;
+    }
+    .privacy li a{
+        padding-bottom: 20px;
+    }
+    
+}
+
+@media screen and (max-width:545px) {
+    .container .form , .container .text {
+        padding:0;
+    }
+}
+
+
+@media screen and (max-width:460px) {
+
+    .container,
+    .navbar {
+        margin: 0 25px;
+    }
+    .service .box img{
+        transform: scale(0.7);
+    }
+    .box_img{
+        width: 100%;
+    }
+    .box_img img{
+        transform: scale(0.7);
+    }
+    .footer{
+        height: 100%;
+    }
+    .intro_2 .text {
+        width: 100%;
+    }
+    .contact_us .subtitle{
+        font-size: 30px;
+        padding: 20px 0;
+    }
+    .form_2 form{
+        width: 90%;
+    }
+}
+
+.nav-active {
+    transform: translateX(0%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+   
+    
+    
+    
+           
+      
+            
+            
+         
+     
+          
+            
+            
+
+           
+              
+         
+            
+          
+            
+            
