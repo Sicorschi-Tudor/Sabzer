@@ -32,26 +32,32 @@ const message = () => {
     const button = document.getElementById('button_contact');
     const now = document.querySelector('.row_contact');
     const succes = document.querySelector('.form_succes');
+
+    let Concerning = document.getElementById('Concerning')
+    let Country = document.getElementById('Country')
+    let Function = document.getElementById('Function')
+    let Professional = document.getElementById('Professional')
+    let First = document.getElementById('First')
+    let Last = document.getElementById('Last')
+    let Email = document.getElementById('Email')
+    let Phone = document.getElementById('Phone')
+    let message = document.getElementById('message')
    
 
     button.addEventListener('click', () => {
 
-        setTimeout(() =>{
+   if(Concerning.value === '' || Country.value === '' || Function.value === '' || Professional.value === '' || First.value === '' || 
+   Last.value === '' || Email.value === '' || Phone.value === '' || message.value === ''){
+    alert('Introduceti datele');
+
+   }else{
             now.classList.add('now');
             
         
             succes.style.display = 'block';
 
-        }, 100);
-
-        
-
-        setTimeout(() =>{
-            now.classList.remove('now');
-        
-            succes.style.display = 'none';
-            
-        }, 5000);
+  
+}
    
       
     });
