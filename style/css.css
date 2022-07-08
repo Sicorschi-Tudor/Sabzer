@@ -1,63 +1,4 @@
-/* manrope-regular - latin */
-@font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('../fonts/manrope-v12-latin-regular.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/manrope-v12-latin-regular.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* manrope-600 - latin */
-@font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 600;
-    src: local(''),
-        url('../fonts/manrope-v12-latin-600.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/manrope-v12-latin-600.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* manrope-700 - latin */
-@font-face {
-    font-family: 'Manrope';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-        url('../fonts/manrope-v12-latin-700.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/manrope-v12-latin-700.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-regular - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-        url('../fonts/poppins-v20-latin-regular.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/poppins-v20-latin-regular.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* poppins-600 - latin */
-@font-face {
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 600;
-    src: local(''),
-        url('../fonts/poppins-v20-latin-600.woff2') format('woff2'),
-        /* Chrome 26+, Opera 23+, Firefox 39+ */
-        url('../fonts/poppins-v20-latin-600.woff') format('woff');
-    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -100,7 +41,7 @@ nav {
 
 .menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 60%;
  
 
@@ -117,7 +58,10 @@ nav {
     line-height: 32px;
     font-weight: 400;
     font-size: 18px;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease ;
+    -moz-transition: transform all 0.4s ease;
+    -o-transition: transform all 0.4s ease;
+    -webkit-transition: transform all 0.4s ease;
 
 }
 
@@ -131,6 +75,9 @@ nav {
     display: none;
     cursor: pointer;
     transition: all 0.3s ease;
+    -moz-transition: transform all 0.3s ease;
+    -o-transition: transform all 0.3s ease;
+    -webkit-transition: transform all 0.3s ease;
 }
 
 .burgher div {
@@ -139,6 +86,9 @@ nav {
     background-color: #2D2D2D;
     margin: 5px;
     transition: all 0.3s ease;
+    -moz-transition: transform all 0.3s ease;
+    -o-transition: transform all 0.3s ease;
+    -webkit-transition: transform all 0.3s ease;
 }
 
 .burgher:hover {
@@ -353,6 +303,9 @@ nav {
     line-height: 32px;
     border: 0px;
     transition: all 0.3s ease-in;
+    -moz-transition: transform all 0.3s ease;
+    -o-transition: transform all 0.3s ease;
+    -webkit-transition: transform all 0.3s ease;
 }
 
 .btn a:hover,
@@ -612,6 +565,9 @@ label {
     right: 0;
     opacity: 0.5;
     transition: 0.2s;
+    -moz-transition: transform all 0.2s ease;
+    -o-transition: transform all 0.2s ease;
+    -webkit-transition: transform all 0.2s ease;
 }
 
 .input-group img {
@@ -963,6 +919,9 @@ textarea:valid~label {
         width: 60%;
         transform: translateX(100%);
         transition: transform 0.5s ease-in;
+        -moz-transition: transform all 0.5s ease-in;
+        -o-transition: transform all 0.5s ease-in;
+        -webkit-transition: transform all 0.5s ease-in;
         display: none;
     }
     .nav-active {
@@ -1103,7 +1062,7 @@ textarea:valid~label {
 
 .container .form , .container .text {
     width: 100%;
-    padding-right: 100px;
+
 }
 .now{
     display: none!important;
