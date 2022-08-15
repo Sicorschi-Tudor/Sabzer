@@ -731,8 +731,7 @@ textarea:valid~label {
 .icon_1{
 
     position: absolute !important;
-    margin-left: 0 !important;
-    opacity: 0.5 !important;
+    margin-left: -30px !important;
 }
 .caret{
     width: 0;
@@ -804,6 +803,30 @@ textarea:valid~label {
     padding-bottom: 280px;
 }
 
+._error{
+    box-shadow: 0 0 5px red;
+
+}
+.contact_form{
+    position: relative;
+}
+.contact_form::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(51, 51, 51, 0.6) url("../img/Loading.gif") center / 60px no-repeat;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s ease 0s;
+}
+
+.contact_form._sending::after{
+    opacity: 1;
+    visibility: visible;
+}
 
 
 
