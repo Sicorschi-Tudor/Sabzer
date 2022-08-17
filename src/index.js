@@ -83,28 +83,30 @@ const sendEmail = () => {
        From: "aaw1713tudor@gmail.com",
        Subject: "This is the subject",
        Body: body,
-     }).then((message) => alert(message));
+     });
 
      
 };
 
-setTimeout(() => {
-  const message = () => {
-    const button = document.getElementById('button_contact');
-    const now = document.querySelector('.row_contact');
-  const succes = document.querySelector('.form_succes');
 
- button.addEventListener('click', () => {
-   
-              now.classList.add('now');
-   
-            succes.style.display = 'block';
-   
-   
-   
-    });
-   }
-   
-   message();
-}, "2000")
 
+const message = () => {
+     const button = document.getElementById('button_contact');
+     const now = document.querySelector('.row_contact');
+   const succes = document.querySelector('.form_succes');
+
+  button.addEventListener('click', () => {
+    
+               now.classList.add('now');
+    
+             succes.style.display = 'block';
+    
+    
+    
+     });
+    }
+    
+    setTimeout(() => {
+      message();
+    }, "1000")
+    
