@@ -83,7 +83,7 @@ const sendEmail = () => {
        From: "aaw1713tudor@gmail.com",
        Subject: "This is the subject",
        Body: body,
-     });
+     }).then((message) => alert(message));
 
      
 };
