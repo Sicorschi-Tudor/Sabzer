@@ -22,38 +22,7 @@ const navSlide = () => {
 
 navSlide();
 
-//const message = () => {
-//    const button = document.getElementById('button_contact');
-//   const now = document.querySelector('.row_contact');
-// const succes = document.querySelector('.form_succes');
 
-//let Concerning = document.getElementById('Concerning')
-//   let Country = document.getElementById('Country')
-//   let Function = document.getElementById('Function')
-//   let Professional = document.getElementById('Professional')
-//   let First = document.getElementById('First')
-//   let Last = document.getElementById('Last')
-//    let Email = document.getElementById('Email')
-//   let Phone = document.getElementById('Phone')
-//   let message = document.getElementById('message')
-
-//   button.addEventListener('click', () => {
-//
-//  if(Concerning.value === '' || Country.value === '' || Function.value === '' || Professional.value === '' || First.value === '' ||
-//  Last.value === '' || Email.value === '' || Phone.value === '' || message.value === ''){
-//   alert('Introduceti datele');
-
-//   }else{
-//            now.classList.add('now');
-
-//           succes.style.display = 'block';
-
-//}
-
-//    });
-//}
-
-//message();
 
 // dropdown form contact
 
@@ -95,9 +64,7 @@ const sendEmail = () => {
   const targetCountry = document.getElementById("test_Country").textContent;
   const targetProfessional = document.getElementById("test_Professional").textContent;
   const targetFunction = document.getElementById("test_Function").textContent;
-  const now = document.querySelector('.row_contact');
-  const succes = document.querySelector('.form_succes');
-  const button = document.getElementById('button_contact');
+
 
   let body = 
   "<b>First Name:</b>"+targetFirstName+"<br><br>"+"<b>Last Name:</b>"+targetLastName+"<br><br>"+
@@ -121,20 +88,23 @@ const sendEmail = () => {
      
 };
 
-const message = () => {
-     const button = document.getElementById('button_contact');
-     const now = document.querySelector('.row_contact');
-   const succes = document.querySelector('.form_succes');
+setTimeout(() => {
+  const message = () => {
+    const button = document.getElementById('button_contact');
+    const now = document.querySelector('.row_contact');
+  const succes = document.querySelector('.form_succes');
 
-  button.addEventListener('click', () => {
-    
-               now.classList.add('now');
-    
-             succes.style.display = 'block';
-    
-    
-    
-     });
-    }
-    
-    message();
+ button.addEventListener('click', () => {
+   
+              now.classList.add('now');
+   
+            succes.style.display = 'block';
+   
+   
+   
+    });
+   }
+   
+   message();
+}, "2000")
+
