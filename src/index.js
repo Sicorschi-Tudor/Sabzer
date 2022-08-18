@@ -54,7 +54,8 @@ dropdowns.forEach((dropdown) => {
   });
 });
 
-const sendEmail = () => {
+const sendEmail = (e) => {
+  e.preventDefault();
   const targetFirstName = document.getElementById("First").value;
   const targetLastName = document.getElementById("Last").value;
   const targetEmail = document.getElementById("Email").value;
@@ -83,30 +84,20 @@ const sendEmail = () => {
        From: "aaw1713tudor@gmail.com",
        Subject: "This is the subject",
        Body: body,
-     }).then((message) => alert(message));
-
+     }).then(() => formSuccessMessage());
      
 };
 
 
 
-const message = () => {
+const formSuccessMessage = () => {
      const button = document.getElementById('button_contact');
      const now = document.querySelector('.row_contact');
-   const succes = document.querySelector('.form_succes');
-
-  button.addEventListener('click', () => {
+     const succes = document.querySelector('.form_succes')
     
-               now.classList.add('now');
+     now.classList.add('now');
+     succes.style.display = 'block';
     
-             succes.style.display = 'block';
-    
-    
-    
-     });
-    }
-    
-    setTimeout(() => {
-      message();
-    }, "1000")
+ }
+   
     
