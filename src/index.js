@@ -108,5 +108,5 @@ const message = () => {
     
     setTimeout(() => {
       message();
-    }, "1000")
+    }, "2000")
     
