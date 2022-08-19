@@ -90,7 +90,8 @@ const sendEmail = () => {
 
 
 
-const message = () => {
+const message = (e) => {
+  (e) => preventDefault();
      const button = document.getElementById('button_contact');
      const now = document.querySelector('.row_contact');
    const succes = document.querySelector('.form_succes');
