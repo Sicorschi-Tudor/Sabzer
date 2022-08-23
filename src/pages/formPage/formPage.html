@@ -151,7 +151,7 @@
                     <div class="title">Take the first step to work with us</div>
                     <div class="text">
                         <p>We need you to help us with some basic information for your project creation. </p>
-                        <p>Also, here are our <a href="#">terms and conditins.</a></p>
+                        <p>Also, here are our <a href="#">terms and conditions.</a></p>
                     </div>
                 </div>
 
@@ -200,22 +200,22 @@
                                             class="icon_1">Professional Situation</span>
                                     <div class="caret"></div>
                                 </div>
-                                <ul class="list">
-                                    <li value="Employee">Employee</li>
+                                <ul class="list" id="box1">
+                                    <li value="Employee" onclick="return showFunction()">Employee</li>
                                     <li value="Freelance">Freelance</li>
                                     <li value="Student">Student</li>
                                 </ul>
                             </div>
                         </div>
 
-                        <div class="input-group">
+                        <div class="input-group" id="Professional_id">
                             <div class="dropdown">
                                 <div class="select">
                                     <span class="selected" id="test_Function"><img src="../../../assets/images/settings.svg" alt=""
                                             class="icon_1">Function</span>
                                     <div class="caret"></div>
                                 </div>
-                                <ul class="list">
+                                <ul class="list" >
                                     <li value="Assistants">Assistants</li>
                                     <li value="CEO - President">CEO - President</li>
                                     <li value="CFO - Chief Financial Officer">CFO - Chief Financial Officer</li>
@@ -274,9 +274,10 @@
                             </label>
                         </div>
 
-                        <button class="button" id="button_contact" type="submit" onclick="message(e)">Send</button>
-                    </div>
+                        <button class="button" id="button_contact" type="submit" >Send</button>
                 </form>
+                </div>
+          
             </div>
         </div>
         </div>

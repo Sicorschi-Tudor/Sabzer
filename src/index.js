@@ -35,6 +35,8 @@ dropdowns.forEach((dropdown) => {
   const options = dropdown.querySelectorAll(".list li");
   const selected = dropdown.querySelector(".selected");
 
+  
+
   select.addEventListener("click", () => {
     select.classList.toggle("select-clicked");
     caret.classList.toggle("caret-rotate");
@@ -52,7 +54,21 @@ dropdowns.forEach((dropdown) => {
       option.classList.add("active");
     });
   });
+
+   document.addEventListener('click', function(event){
+    if(event.target.closest(".list-open")) return 
+   // list.classList.remove("list-open");
+   }) 
+
+
+
 });
+
+
+function showFunction(){
+  const prof = document.querySelector('#Professional_id');
+  prof.style.display = 'block';
+}
 
 const sendEmail = () => {
   const targetFirstName = document.getElementById("First").value;
@@ -92,7 +108,7 @@ const sendEmail = () => {
 
 const message = (e) => {
   (e) => preventDefault();
-     const button = document.getElementById('button_contact');
+  const button = document.getElementById('button_contact');
      const now = document.querySelector('.row_contact');
    const succes = document.querySelector('.form_succes');
 
@@ -106,8 +122,23 @@ const message = (e) => {
     
      });
     }
+
+    const message2 = (e) => {
+      (e) => preventDefault();
+      const button = document.getElementById('button_contact');
+      button.addEventListener('click', () => {
     
-    setTimeout(() => {
-      message();
-    }, "2000");
+        alert("Thanks");
+
+
+
+});
+  
+        
+        
+        
+        }
+        
+    
+   
     

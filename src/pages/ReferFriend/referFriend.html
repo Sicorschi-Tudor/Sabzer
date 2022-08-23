@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../assets/styles/css.css" />
+    <link rel="stylesheet" href="./referFriend.css" />
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -35,44 +36,58 @@
         <div class="line3"></div>
       </div>
     </nav>
-    <!--------------------------------------Work_background------------------------------------------>
 
-    <section class="work_background">
+    <!--------------------------------------Body-Contacts------------------------------------------>
+
+    <section class="refer">
       <div class="container">
-        <div class="title">Be a part of our team!</div>
-        <div class="btn">
-          <a href="#">Send CV</a>
-          <a class="refer" href="./../ReferFriend/referFriend.html">Refer a friend</a>
-        </div>
-        <div class="text">Vacancies found</div>
-
-        <div class="job">
-          <div class="info">
-            <div class="job_title">Front-end Developer</div>
-            <div class="text">Full time / Remote</div>
+          <div class="referTitle">
+            <h1>Refer a Friend</h1>
+<div class="referForm">
+  <form action="#" >
+            <div class="input-group">
+              <input type="text" id="FullName" class="FullName _req" required>
+              <label for="FullName"><img src="../../../assets/images/user.svg" alt="">Your Full Name</label>
           </div>
+          <div class="input-group">
+            <input type="text" id="EMail" class="EMail _req" required>
+            <label for="EMail"><img src="../../../assets/images/email.svg" alt="">Your e-mail address</label>
         </div>
-
-        <div class="job">
-          <div class="info">
-            <div class="job_title">Full-stack developer</div>
-            <div class="text">Full time / Remote</div>
-          </div>
-        </div>
+        <br>
+        
+        <div class="input-group">
+          <input type="text" id="FriendName" class="FriendName _req" required>
+          <label for="FriendName"><img src="../../../assets/images/user.svg" alt="">Your friend’s full Name</label>
       </div>
-
-      <div class="refer_friend">
-        <div class="container">
-          <div class="row">
-            <div class="refer_info">
-              <div class="refer_title">Know a perfect candidate for us?</div>
-              <div class="text">Refer a friend and get valuable bonus</div>
-            </div>
-            <div class="btn">
-              <a class="refer" href="./../ReferFriend/referFriend.html">Refer a friend</a>
-            </div>
+      <div class="input-group">
+        <input type="text" id="FriendEmail" class="FriendEmail _req" required>
+        <label for="FriendEmail"><img src="../../../assets/images/email.svg" alt="">Your friend’s e-mail address</label>
+    </div>
+    <div class="input-group">
+      <div class="dropdown">
+          <div class="select">
+              <span class="selected" id="test_Country"> <img src="../../../assets/images/settings.svg" alt=""
+                      class="icon_1">Select vacancy</span>
+              <div class="caret"></div>
           </div>
-        </div>
+          <ul class="list">
+              <li value="Front-end Developer">Front-end Developer</li>
+              <li value="Full-stack Developer">Full-stack Developer</li>
+          </ul>
+      </div>
+  </div>
+  <div class="input-group">
+    <label class="checkbox" for="myCheckboxId">
+        <input class="checkbox__input" type="checkbox" class="checkbox" required>
+        <div class="checkbox__box">I agree with <a href="#"> terms and conditins.</a></div>
+    </label>
+</div>
+
+            <button class="button" id="button_contact" type="submit" onclick="message2(e)">Send</button>
+
+</form>
+          </div>
+          </div>
       </div>
     </section>
     <!--------------------------------------footer------------------------------------------>
