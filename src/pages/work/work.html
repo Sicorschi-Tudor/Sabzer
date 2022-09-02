@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../../../assets/styles/css.css" />
+    <link rel="stylesheet" href="./../work/work.style.css">
     <link
       rel="stylesheet"
       href="path/to/font-awesome/css/font-awesome.min.css"
@@ -41,7 +42,7 @@
       <div class="container">
         <div class="title">Be a part of our team!</div>
         <div class="btn">
-          <a href="#">Send CV</a>
+          <a href="#" id="send">Send CV</a>
           <a class="refer" href="./../ReferFriend/referFriend.html">Refer a friend</a>
         </div>
         <div class="text">Vacancies found</div>
@@ -75,6 +76,22 @@
         </div>
       </div>
     </section>
+
+    <div class="bg-modal">
+      <div class="modal-content">
+        <div id="close">+</div>
+        <img src="./../../../assets/images/Untitled-1.png" alt="CV">
+
+        <form action="">
+          <input type="file" id="umploadfile"
+  accept=".doc,.docx,.pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" required>
+  <div class="btn">
+    <a href="#">Send</a>
+  </div>
+        </form>
+
+      </div>
+    </div>
     <!--------------------------------------footer------------------------------------------>
 
     <section class="footer">
@@ -126,5 +143,8 @@
     </section>
 
     <script src="../../index.js"></script>
+
+    <script src="../../../src/pages/work/work.js"></script>
+   
   </body>
 </html>

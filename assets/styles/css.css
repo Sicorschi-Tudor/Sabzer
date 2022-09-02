@@ -181,8 +181,7 @@ nav {
     font-weight: 400;
     font-size: 18px;
     line-height: 32px;
-    color: #F0F0F0;
-    opacity: 0.5;
+    color:rgb(240, 240, 240,0.5);
 
 }
 
@@ -871,7 +870,7 @@ textarea:valid~label {
 
 .work_background .text {
     margin-top: 0;
-    color: #2D2D2D;
+    color: rgb(45, 45, 45, 0.5);
     text-align: right;
 }
 
@@ -1150,10 +1149,14 @@ textarea:valid~label {
     .box_img{
         width: 35%;
     }
-    .btn a, .button{
+    .button{
         font-size: 16px;
         padding: 10px 30px;
        }
+    .btn a{
+        font-size: 14px;
+    padding: 8px 20px;
+    }
        .btn{
         padding: 25px 0 45px 0;
        }
